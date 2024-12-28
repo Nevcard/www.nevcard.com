@@ -1,0 +1,41 @@
+$flaticon_mycollection-font: "flaticon_mycollection";
+
+@font-face {
+    font-family: $flaticon_mycollection-font;
+    src: url("./flaticon_mycollection.woff2?9102775b0ffe1a5b35c33941a5d1ac79") format("woff2"),
+url("./flaticon_mycollection.woff?9102775b0ffe1a5b35c33941a5d1ac79") format("woff"),
+url("./flaticon_mycollection.eot?9102775b0ffe1a5b35c33941a5d1ac79#iefix") format("embedded-opentype"),
+url("./flaticon_mycollection.ttf?9102775b0ffe1a5b35c33941a5d1ac79") format("truetype"),
+url("./flaticon_mycollection.svg?9102775b0ffe1a5b35c33941a5d1ac79#flaticon_mycollection") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_mycollection !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_mycollection-map: (
+    "cyber-security": "\f101",
+    "cryptocurrency": "\f102",
+    "contactless": "\f103",
+    "excellence": "\f104",
+);
+
+.flaticon-cyber-security:before {
+    content: map-get($flaticon_mycollection-map, "cyber-security");
+}
+.flaticon-cryptocurrency:before {
+    content: map-get($flaticon_mycollection-map, "cryptocurrency");
+}
+.flaticon-contactless:before {
+    content: map-get($flaticon_mycollection-map, "contactless");
+}
+.flaticon-excellence:before {
+    content: map-get($flaticon_mycollection-map, "excellence");
+}

@@ -1,70 +1,492 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <title>Coming Soon</title>
+    <title>Nevcard Access—The Most Accesible Hardware Wallet</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
       rel="stylesheet"
+      type="text/css"
+      href="assets/css/bootstrap.min.css"
     />
-    <style>
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        font-family: "Nunito", Arial, sans-serif;
-        background-color: #1c1c1c;
-        color: #f0f0f0;
-        padding: 20px;
-        box-sizing: border-box;
-      }
-      .container {
-        text-align: center;
-        max-width: 100%;
-      }
-      .container img {
-        width: 100%;
-        max-width: 500px;
-        height: auto;
-      }
-      .container .tagline {
-        font-size: 6vw;
-        color: #f0f0f0;
-        margin: 5px 0px 20px 0px;
-        font-style: italic;
-      }
-      .container .tagline span {
-        display: block;
-      }
-      .container p {
-        font-size: 4vw;
-        color: #cccccc;
-      }
-      @media (min-width: 768px) {
-        .container .tagline {
-          font-size: 32px;
-        }
-        .container p {
-          font-size: 22px;
-        }
-        .container .tagline span {
-          display: inline;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="assets/css/swiper.css" />
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/font/flaticon_mycollection.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
   </head>
-  <body>
-    <div class="container">
-      <img src="nevcard-banner.png" alt="Nevcard Logo" />
-      <div class="tagline">
-        <span>"Accessible Security,</span>
-        <span>Infinite Possibility!"</span>
-      </div>
-      <p>Coming Soon</p>
+
+  <body class="two">
+    <div class="preloader">
+      <div class="loader"></div>
     </div>
+    <!-- header -->
+    <header id="stickyHeader">
+      <div class="container">
+        <div class="top-bar">
+          <div class="logo">
+            <a href="#">
+              <img alt="logo" src="assets/img/nevcard-logo.png" />
+            </a>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#home"></a></li>
+              <li><a href="#product">Product</a></li>
+              <li><a href="#subscribe">Subscribe</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </nav>
+          <div class="login">
+            <a href="mailto:mail@nevcard.com" class="btn"
+              ><span>Contact Us!</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="hero-section two">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="hero-text">
+              <span>#AccesibleSecurityInfinitePossibility</span>
+              <h1>
+                <div>Welcome to Nevcard</div>
+                <span>Access</span>
+              </h1>
+              <p>
+                Bank-level security in a sleek, card-like design. Store, manage
+                and access your crypto assets—then go beyond that!
+              </p>
+              <div class="btnvideo">
+                <a href="#product" class="btn">Explore Now!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-img">
+              <img src="assets/img/nevcard-home.png" alt="img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="product">
+      <div class="container">
+        <div class="heading">
+          <img src="assets/img/heading_img-2.png" alt="img" />
+          <span>Your Card</span>
+          <h2>
+            The Most <span>Accessible</span> Hardware Wallet, Designed For You!
+          </h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="smartwatch hover-img-two">
+              <figure class="imgg">
+                <img src="assets/img/eal6-plus-chip.png" alt="img" />
+                <img src="assets/img/eal6-plus-chip.png" alt="img" />
+              </figure>
+              <a href="#">EAL6+ Security</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="smartwatch hover-img-two">
+              <figure class="imgg">
+                <img src="assets/img/multi-functionality.png" alt="img" />
+                <img src="assets/img/multi-functionality.png" alt="img" />
+              </figure>
+              <a href="#">Multi-Functionality</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="smartwatch hover-img-two">
+              <figure class="imgg">
+                <img src="assets/img/portable-form.png" alt="img" />
+                <img src="assets/img/portable-form.png" alt="img" />
+              </figure>
+              <a href="#">Portable Form</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="smartwatch hover-img-two">
+              <figure class="imgg">
+                <img src="assets/img/proudly-indonesian.png" alt="img" />
+                <img src="assets/img/proudly-indonesian.png" alt="img" />
+              </figure>
+              <a href="#">Proudly Indonesian</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="accesible-security" class="gap">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="about-img-two">
+              <img
+                src="assets/img/accesible-security-1.png"
+                class="about1"
+                alt="img"
+              />
+              <img
+                src="assets/img/accesible-security-2.png"
+                class="about2"
+                alt="img"
+              />
+              <img
+                src="assets/img/accesible-security-3.png"
+                class="about3"
+                alt="img"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="heading two">
+              <span>Accessible Security</span>
+              <h2><span>Securely</span> Store Your Crypto Assets!</h2>
+            </div>
+            <div class="ultra">
+              <div><i class="flaticon-cyber-security"></i></div>
+              <div>
+                <h3>Top-Notch Security</h3>
+                <p>
+                  Powered by an EAL6+ certified secure element chip, Nevcard
+                  Access offers industry-leading protection for your assets.
+                </p>
+              </div>
+            </div>
+            <div class="ultra">
+              <div><i class="flaticon-cryptocurrency"></i></div>
+              <div>
+                <h3>Supports Thousands of Cryptos</h3>
+                <p>
+                  Compatible with EVM-based cryptocurrencies, with even more
+                  updates on the way!
+                </p>
+              </div>
+            </div>
+            <div class="ultra">
+              <div><i class="flaticon-contactless"></i></div>
+              <div>
+                <h3>Effortless Convenience</h3>
+                <p>
+                  No charging needed—just tap your NFC-enabled smartphone to use
+                  it, as easy as using a e-money card!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="benefits-watch" style="background-color: #f3f3f3">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="heading two">
+              <span>Infinite Possibility</span>
+              <h2>Access Functionality <span>Beyond</span> Storing Crypto!</h2>
+              <p>
+                Nevcard Access is loaded with extra features to simplify and
+                secure your daily life:
+              </p>
+            </div>
+            <ul class="liststyle pt-0">
+              <li>
+                <strong>Secure, Hassle-Free Login:</strong> Log in safely to
+                your everyday website using the FIDO U2F standard.
+              </li>
+              <li>
+                <strong>Your Business Card, Upgraded:</strong> Use Nevcard
+                Access to share your online profile effortlessly.
+              </li>
+              <li>
+                <strong>New Way to Unlock NFTs Real-World Potential:</strong>
+                Import your ERC-721 NFTs to Nevcard Access and turn them into
+                gateways for real-world opportunities.
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <div class="watch-img">
+              <img src="assets/img/possibility.png" alt="img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="subscribe" class="gap">
+      <div class="container">
+        <div class="heading">
+          <img src="assets/img/heading_img-2.png" alt="img" />
+          <span>Get Access!</span>
+          <h2>
+            Nevcard Access will be available for Indonesian market,
+            <span>starting from Rp. 99k!</span>
+          </h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="row g-sm-4 g-2">
+              <div class="col-6">
+                <div class="hover-img-two">
+                  <a href="assets/img/person1.png" data-fancybox="gallery">
+                    <figure class="imgg">
+                      <img src="assets/img/person1.png" alt="img" />
+                      <img src="assets/img/person1.png" alt="img" />
+                    </figure>
+                  </a>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="hover-img-two">
+                  <a href="assets/img/person2.png" data-fancybox="gallery">
+                    <figure class="imgg">
+                      <img src="assets/img/person2.png" alt="img" />
+                      <img src="assets/img/person2.png" alt="img" />
+                    </figure>
+                  </a>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="hover-img-two">
+                  <a href="assets/img/person3.png" data-fancybox="gallery">
+                    <figure class="imgg">
+                      <img src="assets/img/person3.png" alt="img" />
+                      <img src="assets/img/person3.png" alt="img" />
+                    </figure>
+                  </a>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="hover-img-two">
+                  <a href="assets/img/person4.png" data-fancybox="gallery">
+                    <figure class="imgg">
+                      <img src="assets/img/person4.png" alt="img" />
+                      <img src="assets/img/person4.png" alt="img" />
+                    </figure>
+                  </a>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="hover-img-two">
+                  <a href="assets/img/person5.png" data-fancybox="gallery">
+                    <figure class="imgg">
+                      <img src="assets/img/person5.png" alt="img" />
+                      <img src="assets/img/person5.png" alt="img" />
+                    </figure>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <form
+              role="form"
+              class="get-a-quote"
+              id="contact-form"
+              method="post"
+              style="
+                background-image: url(assets/img/lins-img-2.png);
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <i class="flaticon-excellence"></i>
+              <div>
+                <h3>Get in Touch!</h3>
+                <h6>
+                  Be the first to know latest update, and get Access early!
+                </h6>
+              </div>
+
+              <input
+                type="email"
+                name="Email Address"
+                placeholder="Email Address"
+                required=""
+              />
+
+              <button type="submit" class="btn"><span>Subscribe</span></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="faq" class="accordion-section">
+      <div class="container" style="padding-bottom: 92px">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="heading two">
+              <span>FAQ</span>
+              <h2>Have <span> questions?</span> We’ve got answers.</h2>
+            </div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <a href="#" class="heading">
+                  <div class="icon"></div>
+                  <div class="title">What is hardware wallet?</div>
+                </a>
+
+                <div class="content">
+                  <p>
+                    A hardware wallet is a small device that keeps your
+                    cryptocurrency safe by storing your private keys offline.
+                    This makes it much harder for hackers to steal your assets.
+                    It’s simple to use, portable, and gives you peace of mind
+                    when managing your crypto.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item active">
+                <a href="#" class="heading">
+                  <div class="icon"></div>
+                  <div class="title">Why should I have a hardware wallet?</div>
+                </a>
+
+                <div class="content" style="display: block">
+                  <p>
+                    The biggest advantage of a hardware crypto wallet is its
+                    enhanced security—your private keys are stored offline,
+                    keeping them safe from hackers and malware. It also offers
+                    complete independence, giving you full ownership of your
+                    keys and access to your crypto anytime.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <a href="#" class="heading">
+                  <div class="icon"></div>
+                  <div class="title">
+                    What makes Nevcard Access different from other wallet?
+                  </div>
+                </a>
+
+                <div class="content">
+                  <p>
+                    Nevcard Access is a contactless card designed for
+                    convenience, compatible with NFC-enabled smartphones, and
+                    requires no charging. It boasts EAL6+ certification and
+                    offers innovative features like Passkey, Business Card, and
+                    NFT Access. Proudly made by Indonesia's talented youth,
+                    Nevcard combines cutting-edge technology with national
+                    pride.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <a href="#" class="heading">
+                  <div class="icon"></div>
+                  <div class="title">
+                    If I lost my card, will I also lost access to my funds?
+                  </div>
+                </a>
+                <div class="content">
+                  <p>
+                    With Nevcard Access, you can securely create a backup card.
+                    This ensures that if one card is lost, you’ll still have
+                    access to your assets using the backup.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <a href="#" class="heading">
+                  <div class="icon"></div>
+                  <div class="title">
+                    Why is Nevcard Access so affordable? Has the security
+                    quality been compromised?
+                  </div>
+                </a>
+                <div class="content">
+                  <p>
+                    Our top priority is security, which is why we use premium
+                    chips with EAL6+ certification—the highest standard in the
+                    industry. Nevcard’s affordability reflects our commitment to
+                    making crypto solutions accessible to users in Indonesia.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="accordion-img">
+              <img src="assets/img/faq.png" alt="img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer
+      class="gap no-bottom"
+      style="background-image: url(assets/img/lins-img-2.png)"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="heading two">
+              <h4>
+                #<span>Accesible</span>Security
+                <span>Infinite</span>Possibility
+              </h4>
+              <p>The most accesible hardware wallet.</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="useful-link">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#subscribe">Subscribe</a></li>
+                <li><a href="#faq">FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="useful-link">
+              <h3>Resources</h3>
+              <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#"> Terms and Condition</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="useful-link">
+              <h3>Contact</h3>
+              <ul>
+                <li><a href="mailto:mail@nevcard.com"> Email </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copy-right">
+          <p>© <span id="copyright-year"></span> Nevcard</p>
+          <ul class="social-icon">
+            <!-- <li>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div id="scroll-percentage"><span id="scroll-percentage-value"></span></div>
+    <!-- jQuery -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/sweetalert.min.js"></script>
+    <script src="assets/js/contact.js"></script>
   </body>
 </html>
